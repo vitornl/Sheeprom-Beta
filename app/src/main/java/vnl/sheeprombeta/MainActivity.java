@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -19,6 +20,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.CookieManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -50,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     private Button search, derivation, integration, limit, power, cos, sin, tan, invert, log, exp;
     private EditText clause;
     private WebView webView;
+    private ProgressBar progressBar;
+    private InputMethodManager inputMethodManager;
     private GoogleApiClient client;
     private String cookiesBolados = "WR_SID=200.20.0.168.1456250676181406; WolframAlphaSplashOff=true; CookieWarning=nom; _gat_homepage=1; _gat=1; JSESSIONID=29D8F49536A6EFDAC8EF348DB38BB73B; wa_ga_session=73064671875908970000; _ga=GA1.2.897539015.1456250723";
 
@@ -61,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        progressBar.setBackgroundColor(Color.BLACK);
+        progressBar.getIndeterminateDrawable().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+        progressBar.setVisibility(View.GONE);
         clause = (EditText) findViewById(R.id.teClause);
         webView = (WebView) findViewById(R.id.webView);
         webView.setBackgroundColor(Color.BLACK);
@@ -175,11 +183,14 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
+        inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
         search = (Button) findViewById(R.id.bSearch);
         search.setBackgroundColor(Color.BLACK);
         search.setOnClickListener(
                 new Button.OnClickListener() {
                     public void onClick(View v) {
+                        progressBar.setVisibility(View.VISIBLE);
+                        inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                         WebSettings webSettings = webView.getSettings();
                         webSettings.setJavaScriptEnabled(true);
                         webSettings.setDomStorageEnabled(true);
@@ -218,6 +229,7 @@ public class MainActivity extends AppCompatActivity {
                                             "for(i in elements ){\n" +
                                             "     elements[i].style.display = \"none\";\n" +
                                             "}})()");
+                                    progressBar.setVisibility(View.GONE);
                                     webView.setVisibility(View.VISIBLE);
                                 }
                             });
