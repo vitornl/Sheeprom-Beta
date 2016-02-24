@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Sheeprom|βeta</string>
+    <string name="welcome">Bienvenido a Sheeprom|Beta</string>
+    <string name="answer">Respuesta</string>
+    <string name="search">Buscar</string>
+</resources>
