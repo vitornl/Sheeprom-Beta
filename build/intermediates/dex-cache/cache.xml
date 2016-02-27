@@ -1,3 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="/home/bbspock/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.8.3/65fd012581ded67bc20945d85c32b4598c3a9cf1/jsoup-1.8.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="65fd012581ded67bc20945d85c32b4598c3a9cf1">
+        <dex dex="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/pre-dexed/debug/jsoup-1.8.3_f46d440d3b66596568fcf649fae9bbb1ff586e20.jar" />
+    </item>
+    <item
+        jar="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_99e7b57036cc9201710831b232bb0eb466818750.jar" />
+    </item>
+    <item
+        jar="/home/bbspock/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_4a6fe7f24fe7d8b70f99b0dce68e4cb9b1f0f650.jar" />
+    </item>
+    <item
+        jar="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_7135916992c9125f3bd87fee6a817c8885ba54d1.jar" />
+    </item>
+    <item
+        jar="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_617896dd0061d2f8f380c9d31ea4c1b460ae58d1.jar" />
+    </item>
+    <item
+        jar="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_90c3c22e80ac0ec5c1069cb34b8830ae03cd130b.jar" />
+    </item>
+    <item
+        jar="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/bbspock/Git-Projects/Sheeprom-Beta/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_60a758bd31186686a89b6bc7fa03563ce557b505.jar" />
+    </item>
+
+</items>
